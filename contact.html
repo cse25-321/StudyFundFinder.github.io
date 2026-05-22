@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — SchoolFundFind</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-dark">
+    <div class="container">
+      <span class="navbar-brand">SchoolFundFind</span>
+      <ul class="nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="scholarships.html">Scholarships</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="guide.html">Application Guide</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section class="hero-section hero-contact">
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+      <p>We're here to help — get in touch anytime.</p>
+    </div>
+  </section>
+
+  <section class="p-5 section-alt">
+    <div class="container">
+      <div class="row g-5">
+
+        <div class="col-md-7">
+          <h3 class="mb-4">Send Us a Message</h3>
+          <form id="contactForm" onsubmit="sendMessage(event)">
+
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Full Name</label>
+              <input id="contactName" type="text" class="form-control" placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Email Address</label>
+              <input id="contactEmail" type="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Subject</label>
+              <select id="contactSubject" class="form-control">
+                <option value="">Select a subject</option>
+                <option>Scholarship Enquiry</option>
+                <option>Application Help</option>
+                <option>Technical Issue</option>
+                <option>General Question</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Message</label>
+              <textarea id="contactMessage" class="form-control" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+
+        <div class="col-md-5">
+          <h3 class="mb-4">Get In Touch</h3>
+          <div class="mb-3">
+            <h6 class="fw-bold">📧 Email</h6>
+            <p>schoolfundfind@gmail.com</p>
+          </div>
+          <div class="mb-3">
+            <h6 class="fw-bold"> Location</h6>
+            <p>Gaborone, Botswana</p>
+          </div>
+          <div class="mb-3">
+            <h6 class="fw-bold">Response Time</h6>
+            <p>We typically respond within 24–48 hours on business days.</p>
+          </div>
+          <div>
+            <h6 class="fw-bold"> Follow Us</h6>
+            <p>
+              <a href="https://facebook.com" target="_blank" class="btn btn-sm btn-primary me-2">Facebook</a>
+              <a href="https://instagram.com" target="_blank" class="btn btn-sm btn-primary me-2">Instagram</a>
+              <a href="https://twitter.com" target="_blank" class="btn btn-sm btn-primary">Twitter</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="p-5">
+    <div class="container">
+      <h2 class="text-center mb-2">Frequently Asked Questions</h2>
+      <p class="text-center text-muted mb-5">Quick answers to common questions about scholarships and our platform.</p>
+
+      <div class="accordion" id="faqAccordion">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Is SchoolFundFind free to use?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes! SchoolFundFind is completely free for all students. We believe every student deserves
+              access to scholarship information regardless of their background.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Who can apply for the scholarships listed?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Eligibility varies per scholarship. Some are open to Botswana citizens only, while others
+              accept international students. Always check each scholarship's specific requirements on
+              their official website before applying.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              How do I know if a scholarship is still open?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              We recommend clicking the "Apply" button on each scholarship card to visit the institution's
+              official website, where you'll find the most up-to-date deadline and availability information.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+              What documents do I usually need to apply?
+            </button>
+          </h2>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Most scholarships require: certified academic transcripts, a national ID or passport, a
+              personal statement or motivation letter, and proof of admission or acceptance. Some may
+              also ask for financial statements or recommendation letters.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+              Can I apply for more than one scholarship at the same time?
+            </button>
+          </h2>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, in most cases you can apply for multiple scholarships simultaneously. However, some
+              scholarships may have restrictions on receiving multiple awards. Always read the terms
+              and conditions of each scholarship carefully.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+              How can I suggest a scholarship to be added?
+            </button>
+          </h2>
+          <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              We love hearing from students! Use the contact form above to suggest a scholarship you'd
+              like us to feature. Select "General Question" as the subject and share the scholarship
+              name and link.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div class="container">
+      <span class="footer-brand">SchoolFundFind</span>
+      <p>Email: schoolfundfind@gmail.com</p>
+      <p>
+        <a href="https://facebook.com" target="_blank" class="me-3">Facebook</a>
+        <a href="https://instagram.com" target="_blank" class="me-3">Instagram</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+      </p>
+      <p class="mt-2">&copy; 2026 SchoolFundFind. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
