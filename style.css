@@ -48,7 +48,7 @@ body {
   color: var(--brand-accent) !important;
 }
 
-.hero-section {
+.banner-section {
   position: relative;
   min-height: 380px;
   display: flex;
@@ -59,7 +59,7 @@ body {
   color: var(--white);
   overflow: hidden;
 }
-.hero-section::before {
+.banner-section::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -70,32 +70,32 @@ body {
   z-index: 0;
 }
 
-.hero-home::before {
+.banner-home::before {
   background-image: url('images/students.jpg');
 }
-.hero-about::before {
+.banner-about::before {
   background-image: url('images/graduation.jpg');
 }
 
-.hero-scholarships::before {
+.banner-scholarships::before {
   background-image: url('images/graduation.jpg');
 }
 
-.hero-guide::before {
+.banner-guide::before {
   background-image: url('images/students.jpg');
 }
 
-.hero-contact::before {
+.banner-contact::before {
   background-image: url('images/students.jpg');
 }
 
-.hero-section .hero-content {
+.banner-section .hero-content {
   position: relative;
   z-index: 1;
   max-width: 700px;
 }
 
-.hero-section h1 {
+.banner-section h1 {
   font-family: 'Merriweather', serif;
   font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: 900;
@@ -103,7 +103,7 @@ body {
   text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
-.hero-section p {
+.banner-section p {
   font-size: 1.15rem;
   color: rgba(255,255,255,0.9);
   margin-bottom: 1.5rem;
